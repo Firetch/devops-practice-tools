@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: cm-app
+  name: bd-demo
 data:
-  mysql_var: "secret"
+
+  data_root: "secret"

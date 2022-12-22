@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mysql-demo-pod
+spec:
+  containers:
+    - name: demo
+      image: mysql
+      env:
+        - name: MYSQL_ROOT_PASSWORD   
+            configMapKeyRef:
+              name: bd-demo          
+              key: data_root
