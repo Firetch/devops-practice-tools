@@ -15,7 +15,7 @@ variable "token" {
 
 variable "app" {
     type = string
-    default = "nginx"
+    default = "nginx2"
 }
 
 variable "ami" {
