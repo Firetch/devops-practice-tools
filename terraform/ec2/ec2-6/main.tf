@@ -35,7 +35,7 @@ data "aws_ami" "amazon" {
 }
 
 locals {
-  instances_count = 1
+  instances_count = 2
 }
 
 #RECURSOS
@@ -83,7 +83,7 @@ resource "aws_instance" "server" {
   vpc_security_group_ids = [aws_security_group.nginx-sg.id]
   key_name               = aws_key_pair.server_key.key_name
   tags = {
-    Name = "nginx-server-tf"
+    Name = "${var.server}-tf"
   }
   user_data = <<EOF
 #! /bin/bash
