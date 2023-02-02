@@ -50,13 +50,24 @@ Aplicacion realizada en express y se expone en el puerto 3002
 - Crear Repositorio Github para el Codigo
 - Crear las ramas (develop, Testing, Master) en el Repositorio
 
-#### Despliegue Usando Jenkins to AWS EC2 *Consideraciones*
+### Despliegue Pueden escoger entre Jenkins ó Github Actions
+
+#### Despliegue Usando Jenkins to AWS EC2 
 - Crear Jenkinsfile
 - Controlar la version de la aplicacion
 - Contenerizar la aplicacion y publicarla en el registry de docker-hub
 - Crear Docker-compose 
 - Configurar Webhook
 - Crear Notificacion de Despliegue vía Telegram
+
+#### Despliegue Usando Github to AWS EC2 
+- Crear .github/workflows/deploy.yaml
+- Controlar la version de la aplicacion
+- Contenerizar la aplicacion y publicarla en el registry de docker-hub
+- Crear Docker-compose 
+- Configurar Webhook
+- Crear Notificacion de Despliegue vía Telegram
+
 
 ### Despliegues en Kubernetes
 
