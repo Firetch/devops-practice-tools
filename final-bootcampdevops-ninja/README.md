@@ -17,7 +17,7 @@ Aplicacion realizada en express y se expone en el puerto 3002
 
 #### Build Docker 
 - Para construir ejecutamos lo siguiente:
-
+```
     docker build -t ms-frontend:1.0 frontend
     docker build -t ms-products:1.0 products
     docker build -t ms-shopping-cart:1.0 shopping-cart
