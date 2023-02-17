@@ -3,6 +3,7 @@ services:
   # SonarQube
   # default user = admin
   # default pass = admin
+  # sudo sysctl -w vm.max_map_count=262144
   sonarQube:
     image: sonarqube:latest
     container_name: sonarQube
